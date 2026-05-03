@@ -579,3 +579,173 @@ body.ko .lang-ko.block { display: block; }
   .commitment-grid { grid-template-columns: 1fr; }
   .contact-box { padding: 28px 20px; }
 }
+
+/* ===== Tea Diagnosis ===== */
+.diag-wrap {
+  max-width: 640px;
+  margin: 0 auto;
+}
+.diag-panel { display: none; }
+.diag-panel-active {
+  display: block;
+  animation: diagFadeIn .4s ease;
+}
+@keyframes diagFadeIn {
+  from { opacity: 0; transform: translateY(16px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+.diag-intro-icon { font-size: 4rem; text-align: center; margin-bottom: 24px; }
+.diag-intro-lead {
+  font-size: 1.05rem;
+  text-align: center;
+  line-height: 2;
+  margin-bottom: 10px;
+}
+.diag-intro-note {
+  font-size: .82rem;
+  text-align: center;
+  color: var(--text-muted);
+  letter-spacing: .1em;
+  margin-bottom: 40px;
+}
+.diag-start-btn { display: block; margin: 0 auto; min-width: 200px; }
+
+.diag-progress-wrap {
+  height: 4px;
+  background: var(--bg-dark);
+  border-radius: 2px;
+  overflow: hidden;
+  margin-bottom: 28px;
+}
+.diag-progress-bar {
+  height: 100%;
+  width: 0%;
+  background: var(--gold);
+  border-radius: 2px;
+  transition: width .5s ease;
+}
+.diag-step-label {
+  font-size: .78rem;
+  color: var(--text-muted);
+  letter-spacing: .12em;
+  text-align: center;
+  margin-bottom: 18px;
+}
+.diag-question {
+  font-size: clamp(1.1rem, 2.5vw, 1.45rem);
+  font-weight: 700;
+  color: var(--green);
+  text-align: center;
+  margin-bottom: 40px;
+  line-height: 1.65;
+}
+.diag-answers {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+.diag-answer-btn {
+  background: var(--white);
+  border: 2px solid var(--border);
+  border-radius: var(--radius);
+  padding: 22px 14px;
+  cursor: pointer;
+  transition: all var(--ease);
+  text-align: center;
+  font-family: var(--font);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+.diag-answer-btn:hover {
+  border-color: var(--green);
+  background: #f0f7ea;
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-sm);
+}
+.diag-answer-icon { font-size: 1.8rem; }
+.diag-answer-text { font-size: .88rem; color: var(--text); line-height: 1.5; }
+
+.diag-result-label {
+  font-size: .78rem;
+  letter-spacing: .2em;
+  color: var(--text-muted);
+  text-align: center;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+.diag-result-card {
+  background: var(--white);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-md);
+  padding: 48px 40px;
+  text-align: center;
+  border-top: 4px solid var(--gold);
+}
+.diag-result-icon { font-size: 4rem; margin-bottom: 20px; }
+.diag-result-tag {
+  display: inline-block;
+  padding: 4px 16px;
+  border: 1.5px solid var(--gold);
+  color: var(--gold);
+  border-radius: 20px;
+  font-size: .78rem;
+  letter-spacing: .1em;
+  margin-bottom: 16px;
+}
+.diag-result-name {
+  font-size: clamp(1.4rem, 3vw, 2rem);
+  font-weight: 700;
+  color: var(--green);
+  margin-bottom: 6px;
+}
+.diag-result-origin {
+  font-size: .78rem;
+  color: var(--text-muted);
+  letter-spacing: .14em;
+  margin-bottom: 24px;
+}
+.diag-result-desc {
+  font-size: .875rem;
+  color: var(--text-muted);
+  line-height: 2;
+  margin-bottom: 32px;
+  text-align: left;
+}
+.diag-result-actions {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* Diagnosis CTA on index */
+.diag-cta-wrap {
+  background: linear-gradient(135deg, var(--green) 0%, #2d6e3f 100%);
+  border-radius: var(--radius);
+  padding: 64px 40px;
+  text-align: center;
+  color: var(--white);
+}
+.diag-cta-icon { font-size: 3rem; margin-bottom: 20px; }
+.diag-cta-title {
+  font-size: clamp(1.2rem, 2.5vw, 1.7rem);
+  font-weight: 700;
+  letter-spacing: .08em;
+  margin-bottom: 14px;
+  line-height: 1.6;
+}
+.diag-cta-text {
+  font-size: .9rem;
+  opacity: .85;
+  line-height: 1.9;
+  margin-bottom: 36px;
+}
+
+@media (max-width: 480px) {
+  .diag-answers { grid-template-columns: 1fr; }
+  .diag-result-card { padding: 32px 20px; }
+  .diag-cta-wrap { padding: 44px 24px; }
+}
