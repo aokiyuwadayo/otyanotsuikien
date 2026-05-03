@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="築城園の商品一覧。対馬産の緑茶・ほうじ茶・ギフトセットをご覧ください。">
-  <title>商品一覧 | 築城園</title>
+  <meta name="description" content="お茶の築城園の商品一覧。産地直送の煎茶・玄米茶・抹茶から、専門店ならではのお菓子・茶器まで。何gからでも量り売りします。">
+  <title>商品一覧 | お茶の築城園</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;500;700&family=Noto+Serif+KR:wght@400;500;700&display=swap" rel="stylesheet">
@@ -18,8 +18,8 @@
     <div class="site-logo">
       <a href="index.html">
         <span class="logo-main">築城園</span>
-        <span class="logo-sub lang-ja">対馬のお茶</span>
-        <span class="logo-sub lang-ko">쓰시마의 차</span>
+        <span class="logo-sub lang-ja">対馬のお茶専門店</span>
+        <span class="logo-sub lang-ko">쓰시마 차 전문점</span>
       </a>
     </div>
     <nav class="site-nav" id="siteNav">
@@ -40,181 +40,235 @@
 <div class="page-hero">
   <h1 class="page-hero-title lang-ja">商品一覧</h1>
   <h1 class="page-hero-title lang-ko">상품 목록</h1>
-  <p class="page-hero-sub lang-ja">PRODUCTS</p>
-  <p class="page-hero-sub lang-ko">PRODUCTS</p>
+  <p class="page-hero-sub lang-ja">PRODUCTS ／ 何gからでも量り売りします</p>
+  <p class="page-hero-sub lang-ko">PRODUCTS ／ 원하는 만큼 무게 판매</p>
 </div>
 
 <!-- ===== Products ===== -->
 <section class="section">
   <div class="container">
 
-    <!-- Breadcrumb -->
     <nav class="breadcrumb">
       <a href="index.html"><span class="lang-ja">ホーム</span><span class="lang-ko">홈</span></a>
       <span>›</span>
       <span class="lang-ja">商品一覧</span><span class="lang-ko">상품 목록</span>
     </nav>
 
+    <!-- 量り売り案内 -->
+    <div style="background:var(--bg-dark); border-left:4px solid var(--green); padding:16px 20px; margin-bottom:40px; border-radius:0 4px 4px 0; font-size:.9rem; color:var(--text-muted); line-height:1.9;">
+      <span class="lang-ja">💡 お茶はすべて<strong style="color:var(--green);">何gからでも量り売り</strong>いたします。「少し試してみたい」「複数の産地を飲み比べたい」など、お気軽にご相談ください。</span>
+      <span class="lang-ko">💡 차는 모두 <strong style="color:var(--green);">원하는 만큼 무게 판매</strong>합니다. '조금 맛보고 싶다', '여러 산지를 비교해보고 싶다' 등 편하게 말씀해 주세요.</span>
+    </div>
+
     <!-- Category Filter -->
     <div class="category-filter">
       <button class="filter-btn active" data-filter="all">
         <span class="lang-ja">すべて</span><span class="lang-ko">전체</span>
       </button>
-      <button class="filter-btn" data-filter="green">
-        <span class="lang-ja">緑茶</span><span class="lang-ko">녹차</span>
+      <button class="filter-btn" data-filter="tea">
+        <span class="lang-ja">お茶</span><span class="lang-ko">차</span>
       </button>
-      <button class="filter-btn" data-filter="hojicha">
-        <span class="lang-ja">ほうじ茶</span><span class="lang-ko">호지차</span>
+      <button class="filter-btn" data-filter="sweets">
+        <span class="lang-ja">お菓子</span><span class="lang-ko">과자</span>
       </button>
-      <button class="filter-btn" data-filter="gift">
-        <span class="lang-ja">ギフト</span><span class="lang-ko">선물</span>
+      <button class="filter-btn" data-filter="teaware">
+        <span class="lang-ja">茶器・陶器</span><span class="lang-ko">다기・도자기</span>
       </button>
     </div>
 
     <!-- Products Grid -->
     <div class="products-grid">
 
-      <!-- 緑茶 1 -->
-      <article class="product-card reveal" data-category="green">
+      <!-- お茶 -->
+      <article class="product-card reveal" data-category="tea">
         <div class="product-card-placeholder">🍵</div>
         <div class="product-card-body">
-          <p class="product-card-cat"><span class="lang-ja">緑茶</span><span class="lang-ko">녹차</span></p>
+          <p class="product-card-cat"><span class="lang-ja">煎茶 ／ 福岡・八女</span><span class="lang-ko">센차 ／ 후쿠오카 야메</span></p>
           <h2 class="product-card-name">
-            <span class="lang-ja">対馬緑茶 上煎茶</span>
-            <span class="lang-ko">쓰시마 녹차 상급 센차</span>
+            <span class="lang-ja">八女深むし煎茶</span>
+            <span class="lang-ko">야메 후카무시 센차</span>
           </h2>
           <p class="product-card-desc">
-            <span class="lang-ja">島の霧が育てた深い甘みと清々しい香り。渋みと旨みのバランスが絶妙な逸品。</span>
-            <span class="lang-ko">섬의 안개가 키운 깊은 단맛과 청아한 향기. 떫은맛과 감칠맛의 균형이 절묘한 명품.</span>
+            <span class="lang-ja">濃厚なコクと甘みが自慢の看板商品。深蒸し製法でまろやかな口当たり。</span>
+            <span class="lang-ko">진한 풍미와 단맛이 자랑인 대표 상품. 후카무시 제법으로 부드러운 입맛.</span>
           </p>
           <div class="product-card-footer">
-            <span class="price">¥1,080 <span class="price-tax lang-ja">（税込）</span><span class="price-tax lang-ko">（세금포함）</span></span>
+            <span class="price">¥1,080 <span class="price-tax">/ 100g</span></span>
             <a href="product-detail.html" class="btn btn-outline btn-sm"><span class="lang-ja">詳細へ</span><span class="lang-ko">자세히</span></a>
           </div>
         </div>
       </article>
 
-      <!-- 緑茶 2 -->
-      <article class="product-card reveal" data-category="green">
+      <article class="product-card reveal" data-category="tea">
         <div class="product-card-placeholder">🌱</div>
         <div class="product-card-body">
-          <p class="product-card-cat"><span class="lang-ja">緑茶</span><span class="lang-ko">녹차</span></p>
+          <p class="product-card-cat"><span class="lang-ja">煎茶 ／ 佐賀・嬉野</span><span class="lang-ko">센차 ／ 사가 우레시노</span></p>
           <h2 class="product-card-name">
-            <span class="lang-ja">対馬緑茶 初摘み</span>
-            <span class="lang-ko">쓰시마 녹차 첫 수확</span>
+            <span class="lang-ja">嬉野煎茶</span>
+            <span class="lang-ko">우레시노 센차</span>
           </h2>
           <p class="product-card-desc">
-            <span class="lang-ja">年に一度だけ摘み取る一番茶。みずみずしい新緑の香りと、豊かな甘みをお楽しみください。</span>
-            <span class="lang-ko">1년에 한 번만 따는 첫 번째 찻잎. 싱그러운 새싹의 향기와 풍부한 단맛을 즐기세요.</span>
+            <span class="lang-ja">佐賀・嬉野の銘茶。とろみのある甘みと、飲んだ後に広がる爽やかな香りが特徴です。</span>
+            <span class="lang-ko">사가 우레시노의 명차. 걸쭉한 단맛과 마신 후 퍼지는 상쾌한 향기가 특징입니다.</span>
+          </p>
+          <div class="product-card-footer">
+            <span class="price">¥450〜 <span class="price-tax">/ 100g〜</span></span>
+            <a href="contact.html" class="btn btn-outline btn-sm"><span class="lang-ja">お問い合わせ</span><span class="lang-ko">문의</span></a>
+          </div>
+        </div>
+      </article>
+
+      <article class="product-card reveal" data-category="tea">
+        <div class="product-card-placeholder">🏔️</div>
+        <div class="product-card-body">
+          <p class="product-card-cat"><span class="lang-ja">煎茶 ／ 鹿児島・知覧</span><span class="lang-ko">센차 ／ 가고시마 치란</span></p>
+          <h2 class="product-card-name">
+            <span class="lang-ja">知覧茶</span>
+            <span class="lang-ko">치란차</span>
+          </h2>
+          <p class="product-card-desc">
+            <span class="lang-ja">日本一の生産量を誇る鹿児島・知覧産。すっきりとした味わいで、毎日飲みたくなる飲みやすさ。</span>
+            <span class="lang-ko">일본 최고 생산량을 자랑하는 가고시마 치란산. 깔끔한 맛으로 매일 마시고 싶어지는 마시기 편한 차.</span>
+          </p>
+          <div class="product-card-footer">
+            <span class="price">¥450〜 <span class="price-tax">/ 100g〜</span></span>
+            <a href="contact.html" class="btn btn-outline btn-sm"><span class="lang-ja">お問い合わせ</span><span class="lang-ko">문의</span></a>
+          </div>
+        </div>
+      </article>
+
+      <article class="product-card reveal" data-category="tea">
+        <div class="product-card-placeholder">🍚</div>
+        <div class="product-card-body">
+          <p class="product-card-cat"><span class="lang-ja">玄米茶</span><span class="lang-ko">현미차</span></p>
+          <h2 class="product-card-name">
+            <span class="lang-ja">玄米茶</span>
+            <span class="lang-ko">현미차</span>
+          </h2>
+          <p class="product-card-desc">
+            <span class="lang-ja">香ばしく炒った玄米とお茶のブレンド。さっぱりと軽い口当たりで、食事のお供にぴったりです。</span>
+            <span class="lang-ko">고소하게 볶은 현미와 차의 블렌드. 깔끔하고 가벼운 입맛으로 식사와 함께 즐기기에 딱입니다.</span>
+          </p>
+          <div class="product-card-footer">
+            <span class="price">¥450〜 <span class="price-tax">/ 100g〜</span></span>
+            <a href="contact.html" class="btn btn-outline btn-sm"><span class="lang-ja">お問い合わせ</span><span class="lang-ko">문의</span></a>
+          </div>
+        </div>
+      </article>
+
+      <article class="product-card reveal" data-category="tea">
+        <div class="product-card-placeholder">🌾</div>
+        <div class="product-card-body">
+          <p class="product-card-cat"><span class="lang-ja">抹茶入り玄米茶</span><span class="lang-ko">말차 현미차</span></p>
+          <h2 class="product-card-name">
+            <span class="lang-ja">抹茶入り玄米茶</span>
+            <span class="lang-ko">말차 현미차</span>
+          </h2>
+          <p class="product-card-desc">
+            <span class="lang-ja">玄米茶に抹茶をブレンド。鮮やかな緑色と、香ばしさと抹茶のコクが合わさった一杯です。</span>
+            <span class="lang-ko">현미차에 말차를 블렌드. 선명한 녹색과 고소함과 말차의 풍미가 어우러진 한 잔입니다.</span>
+          </p>
+          <div class="product-card-footer">
+            <span class="price">¥450〜 <span class="price-tax">/ 100g〜</span></span>
+            <a href="contact.html" class="btn btn-outline btn-sm"><span class="lang-ja">お問い合わせ</span><span class="lang-ko">문의</span></a>
+          </div>
+        </div>
+      </article>
+
+      <article class="product-card reveal" data-category="tea">
+        <div class="product-card-placeholder">🍃</div>
+        <div class="product-card-body">
+          <p class="product-card-cat"><span class="lang-ja">抹茶</span><span class="lang-ko">말차</span></p>
+          <h2 class="product-card-name">
+            <span class="lang-ja">抹茶</span>
+            <span class="lang-ko">말차</span>
+          </h2>
+          <p class="product-card-desc">
+            <span class="lang-ja">茶道や料理・スイーツにも使える本格抹茶。お菓子作りや抹茶ラテにもおすすめです。</span>
+            <span class="lang-ko">다도나 요리・스위츠에도 사용할 수 있는 본격 말차. 과자 만들기나 말차 라테에도 추천합니다.</span>
+          </p>
+          <div class="product-card-footer">
+            <span class="price lang-ja">お問い合わせください</span>
+            <span class="price lang-ko">문의해 주세요</span>
+            <a href="contact.html" class="btn btn-outline btn-sm"><span class="lang-ja">お問い合わせ</span><span class="lang-ko">문의</span></a>
+          </div>
+        </div>
+      </article>
+
+      <!-- お菓子 -->
+      <article class="product-card reveal" data-category="sweets">
+        <div class="product-card-placeholder">☕</div>
+        <div class="product-card-body">
+          <p class="product-card-cat"><span class="lang-ja">お菓子</span><span class="lang-ko">과자</span></p>
+          <h2 class="product-card-name">
+            <span class="lang-ja">炭焼珈琲寒天ゼリー</span>
+            <span class="lang-ko">숯불 커피 한천 젤리</span>
+          </h2>
+          <p class="product-card-desc">
+            <span class="lang-ja">お茶専門店ならではの、スーパーでは見つからない本格ゼリー。お茶との相性も抜群です。</span>
+            <span class="lang-ko">차 전문점만의, 슈퍼마켓에서는 찾을 수 없는 본격 젤리. 차와의 궁합도 최고입니다.</span>
+          </p>
+          <div class="product-card-footer">
+            <span class="price">¥390 <span class="price-tax">/ 1袋</span></span>
+            <a href="contact.html" class="btn btn-outline btn-sm"><span class="lang-ja">お問い合わせ</span><span class="lang-ko">문의</span></a>
+          </div>
+        </div>
+      </article>
+
+      <article class="product-card reveal" data-category="sweets">
+        <div class="product-card-placeholder">🍡</div>
+        <div class="product-card-body">
+          <p class="product-card-cat"><span class="lang-ja">お菓子</span><span class="lang-ko">과자</span></p>
+          <h2 class="product-card-name">
+            <span class="lang-ja">プチようかん詰め合わせ</span>
+            <span class="lang-ko">미니 양갱 모둠</span>
+          </h2>
+          <p class="product-card-desc">
+            <span class="lang-ja">贈り物にも喜ばれる、上品なようかんの詰め合わせ。お茶請けや手土産に最適です。</span>
+            <span class="lang-ko">선물로도 인기 있는 품격 있는 양갱 모둠. 차 과자나 답례품에 최적입니다.</span>
           </p>
           <div class="product-card-footer">
             <span class="price">¥1,620 <span class="price-tax lang-ja">（税込）</span><span class="price-tax lang-ko">（세금포함）</span></span>
-            <a href="product-detail.html" class="btn btn-outline btn-sm"><span class="lang-ja">詳細へ</span><span class="lang-ko">자세히</span></a>
+            <a href="contact.html" class="btn btn-outline btn-sm"><span class="lang-ja">お問い合わせ</span><span class="lang-ko">문의</span></a>
           </div>
         </div>
       </article>
 
-      <!-- 緑茶 3 -->
-      <article class="product-card reveal" data-category="green">
-        <div class="product-card-placeholder">☕</div>
-        <div class="product-card-body">
-          <p class="product-card-cat"><span class="lang-ja">緑茶</span><span class="lang-ko">녹차</span></p>
-          <h2 class="product-card-name">
-            <span class="lang-ja">対馬深蒸し茶</span>
-            <span class="lang-ko">쓰시마 후카무시차</span>
-          </h2>
-          <p class="product-card-desc">
-            <span class="lang-ja">じっくり蒸し上げた深蒸し製法で、濃厚な旨みとまろやかな口当たりが特徴です。</span>
-            <span class="lang-ko">오래 쪄서 만든 후카무시 제법으로, 진한 감칠맛과 부드러운 입맛이 특징입니다.</span>
-          </p>
-          <div class="product-card-footer">
-            <span class="price">¥1,188 <span class="price-tax lang-ja">（税込）</span><span class="price-tax lang-ko">（세금포함）</span></span>
-            <a href="product-detail.html" class="btn btn-outline btn-sm"><span class="lang-ja">詳細へ</span><span class="lang-ko">자세히</span></a>
-          </div>
-        </div>
-      </article>
-
-      <!-- ほうじ茶 1 -->
-      <article class="product-card reveal" data-category="hojicha">
+      <!-- 茶器・陶器 -->
+      <article class="product-card reveal" data-category="teaware">
         <div class="product-card-placeholder">🫖</div>
         <div class="product-card-body">
-          <p class="product-card-cat"><span class="lang-ja">ほうじ茶</span><span class="lang-ko">호지차</span></p>
+          <p class="product-card-cat"><span class="lang-ja">茶器・陶器</span><span class="lang-ko">다기・도자기</span></p>
           <h2 class="product-card-name">
-            <span class="lang-ja">対馬ほうじ茶</span>
-            <span class="lang-ko">쓰시마 호지차</span>
+            <span class="lang-ja">急須・湯飲み・茶道具</span>
+            <span class="lang-ko">다관・찻잔・다도구</span>
           </h2>
           <p class="product-card-desc">
-            <span class="lang-ja">香ばしい焙煎の香りと低カフェイン。夜のリラックスタイムや、食後のひとときに最適です。</span>
-            <span class="lang-ko">고소한 볶음 향기와 저카페인. 저녁 휴식 시간이나 식후 한때에 최적입니다.</span>
+            <span class="lang-ja">急須・湯飲みなどの茶器や陶器、茶道具も取り揃えています。ご自宅用から贈り物まで。</span>
+            <span class="lang-ko">다관·찻잔 등의 다기와 도자기, 다도구도 갖추고 있습니다. 가정용부터 선물까지.</span>
           </p>
           <div class="product-card-footer">
-            <span class="price">¥864 <span class="price-tax lang-ja">（税込）</span><span class="price-tax lang-ko">（세금포함）</span></span>
-            <a href="product-detail.html" class="btn btn-outline btn-sm"><span class="lang-ja">詳細へ</span><span class="lang-ko">자세히</span></a>
-          </div>
-        </div>
-      </article>
-
-      <!-- ほうじ茶 2 -->
-      <article class="product-card reveal" data-category="hojicha">
-        <div class="product-card-placeholder">🍂</div>
-        <div class="product-card-body">
-          <p class="product-card-cat"><span class="lang-ja">ほうじ茶</span><span class="lang-ko">호지차</span></p>
-          <h2 class="product-card-name">
-            <span class="lang-ja">対馬ほうじ茶 深煎り</span>
-            <span class="lang-ko">쓰시마 호지차 진하게 볶은</span>
-          </h2>
-          <p class="product-card-desc">
-            <span class="lang-ja">より深く焙煎した濃厚タイプ。ビターな香ばしさと力強いコクが楽しめる一杯です。</span>
-            <span class="lang-ko">더 깊게 볶은 진한 타입. 쌉쌀한 고소함과 강한 풍미를 즐길 수 있는 한 잔입니다.</span>
-          </p>
-          <div class="product-card-footer">
-            <span class="price">¥972 <span class="price-tax lang-ja">（税込）</span><span class="price-tax lang-ko">（세금포함）</span></span>
-            <a href="product-detail.html" class="btn btn-outline btn-sm"><span class="lang-ja">詳細へ</span><span class="lang-ko">자세히</span></a>
-          </div>
-        </div>
-      </article>
-
-      <!-- ギフト -->
-      <article class="product-card reveal" data-category="gift">
-        <div class="product-card-placeholder">🎁</div>
-        <div class="product-card-body">
-          <p class="product-card-cat"><span class="lang-ja">ギフトセット</span><span class="lang-ko">선물 세트</span></p>
-          <h2 class="product-card-name">
-            <span class="lang-ja">対馬茶 ギフトセット（2種）</span>
-            <span class="lang-ko">쓰시마 차 선물 세트（2종）</span>
-          </h2>
-          <p class="product-card-desc">
-            <span class="lang-ja">緑茶・ほうじ茶の飲み比べセット。贈り物や手土産に最適。専用ボックス入り。</span>
-            <span class="lang-ko">녹차·호지차 2종 세트. 선물이나 답례품에 최적. 전용 박스 포함.</span>
-          </p>
-          <div class="product-card-footer">
-            <span class="price">¥3,240 <span class="price-tax lang-ja">（税込）</span><span class="price-tax lang-ko">（세금포함）</span></span>
-            <a href="product-detail.html" class="btn btn-outline btn-sm"><span class="lang-ja">詳細へ</span><span class="lang-ko">자세히</span></a>
-          </div>
-        </div>
-      </article>
-
-      <!-- ギフト 豪華 -->
-      <article class="product-card reveal" data-category="gift">
-        <div class="product-card-placeholder">🏮</div>
-        <div class="product-card-body">
-          <p class="product-card-cat"><span class="lang-ja">ギフトセット</span><span class="lang-ko">선물 세트</span></p>
-          <h2 class="product-card-name">
-            <span class="lang-ja">対馬茶 特撰ギフトセット（4種）</span>
-            <span class="lang-ko">쓰시마 차 특선 선물 세트（4종）</span>
-          </h2>
-          <p class="product-card-desc">
-            <span class="lang-ja">上煎茶・初摘み・深蒸し・ほうじ茶の4種詰め合わせ。特別な贈り物に相応しい逸品です。</span>
-            <span class="lang-ko">상급 센차·첫 수확·후카무시·호지차 4종 세트. 특별한 선물에 걸맞은 명품입니다.</span>
-          </p>
-          <div class="product-card-footer">
-            <span class="price">¥5,940 <span class="price-tax lang-ja">（税込）</span><span class="price-tax lang-ko">（세금포함）</span></span>
-            <a href="product-detail.html" class="btn btn-outline btn-sm"><span class="lang-ja">詳細へ</span><span class="lang-ko">자세히</span></a>
+            <span class="price lang-ja">各種取り揃え</span>
+            <span class="price lang-ko">다양하게 구비</span>
+            <a href="contact.html" class="btn btn-outline btn-sm"><span class="lang-ja">お問い合わせ</span><span class="lang-ko">문의</span></a>
           </div>
         </div>
       </article>
 
     </div>
+
+    <!-- Gift note -->
+    <div style="text-align:center; margin-top:56px; padding:32px; background:var(--bg-dark); border-radius:4px;" class="reveal">
+      <p style="font-size:.95rem; color:var(--text-muted); margin-bottom:16px;">
+        <span class="lang-ja">🎁 ギフト包装・のし紙対応。ご予算に合わせて詰め合わせいたします。</span>
+        <span class="lang-ko">🎁 선물 포장・노시 종이 대응. 예산에 맞게 담아드립니다.</span>
+      </p>
+      <a href="contact.html" class="btn btn-outline">
+        <span class="lang-ja">ギフトのご相談はこちら</span>
+        <span class="lang-ko">선물 상담은 이쪽으로</span>
+      </a>
+    </div>
+
   </div>
 </section>
 
@@ -223,10 +277,10 @@
   <div class="footer-inner">
     <div>
       <p class="footer-logo-main">築城園</p>
-      <p class="footer-logo-sub lang-ja">対馬のお茶</p>
-      <p class="footer-logo-sub lang-ko">쓰시마의 차</p>
-      <p class="footer-tagline lang-ja">長崎県対馬市で代々受け継いできた、<br>本物の味をあなたの手に。</p>
-      <p class="footer-tagline lang-ko">나가사키현 쓰시마시에서 대대로 이어져 온,<br>진짜 맛을 당신의 손에.</p>
+      <p class="footer-logo-sub lang-ja">昭和42年創業・対馬のお茶専門店</p>
+      <p class="footer-logo-sub lang-ko">쇼와 42년 창업・쓰시마 차 전문점</p>
+      <p class="footer-tagline lang-ja">産地直送のほんものの日本茶を、<br>対馬からお届けします。</p>
+      <p class="footer-tagline lang-ko">산지 직송의 진짜 일본차를,<br>쓰시마에서 전합니다.</p>
     </div>
     <div>
       <p class="footer-heading lang-ja">メニュー</p>
@@ -242,14 +296,22 @@
       </nav>
     </div>
     <div>
-      <p class="footer-heading lang-ja">お店情報</p>
-      <p class="footer-heading lang-ko">가게 정보</p>
-      <p class="footer-info lang-ja">〒817-XXXX<br>長崎県対馬市 ※要追記<br>TEL: 0000-00-0000<br>営業時間: 9:00〜17:00</p>
-      <p class="footer-info lang-ko">〒817-XXXX<br>나가사키현 쓰시마시 ※추기 필요<br>TEL: 0000-00-0000<br>영업시간: 9:00〜17:00</p>
+      <p class="footer-heading lang-ja">店舗情報</p>
+      <p class="footer-heading lang-ko">점포 정보</p>
+      <p class="footer-info lang-ja">
+        【本店】<br>〒817-0016 長崎県対馬市厳原町東里341-28<br>TEL: 0920-52-0924<br><br>
+        【茶小売販売店】<br>〒817-0021 長崎県対馬市厳原町今屋敷774-5<br>TEL: 0920-52-0913<br><br>
+        定休日: 日曜日
+      </p>
+      <p class="footer-info lang-ko">
+        【본점】<br>〒817-0016 나가사키현 쓰시마시 이즈하라마치 히가시자토 341-28<br>TEL: 0920-52-0924<br><br>
+        【차 소매 판매점】<br>〒817-0021 나가사키현 쓰시마시 이즈하라마치 이마야시키 774-5<br>TEL: 0920-52-0913<br><br>
+        정기 휴일: 일요일
+      </p>
     </div>
   </div>
   <div class="footer-bottom">
-    <p>© 2025 築城園 All Rights Reserved.</p>
+    <p>© 2025 お茶の築城園 All Rights Reserved.</p>
   </div>
 </footer>
 
