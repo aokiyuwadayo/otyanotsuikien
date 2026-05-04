@@ -67,6 +67,17 @@ document.querySelectorAll('.thumb').forEach(t => {
   });
 });
 
+/* ===== Back to Top ===== */
+const toTopBtn = document.getElementById('toTopBtn');
+if (toTopBtn) {
+  window.addEventListener('scroll', () => {
+    toTopBtn.classList.toggle('visible', window.scrollY > 300);
+  });
+  toTopBtn.addEventListener('click', () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+}
+
 /* ===== Scroll Fade-in ===== */
 const observer = new IntersectionObserver(entries => {
   entries.forEach(e => {

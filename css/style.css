@@ -71,8 +71,20 @@ body.ko .lang-ko.block { display: block; }
 }
 .site-logo a {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
   line-height: 1.2;
+}
+.logo-mark {
+  width: 40px;
+  height: 40px;
+  flex-shrink: 0;
+  border-radius: 4px;
+}
+.logo-text {
+  display: flex;
+  flex-direction: column;
 }
 .logo-main {
   font-size: 1.45rem;
@@ -579,6 +591,29 @@ body.ko .lang-ko.block { display: block; }
   .commitment-grid { grid-template-columns: 1fr; }
   .contact-box { padding: 28px 20px; }
 }
+
+/* ===== Back to Top ===== */
+.to-top-btn {
+  position: fixed;
+  bottom: 32px;
+  right: 32px;
+  width: 48px;
+  height: 48px;
+  background: var(--green);
+  color: var(--white);
+  border: none;
+  border-radius: 50%;
+  font-size: 1.1rem;
+  cursor: pointer;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity .3s ease, visibility .3s ease, transform .3s ease;
+  z-index: 90;
+  box-shadow: var(--shadow-md);
+  font-family: var(--font);
+}
+.to-top-btn.visible { opacity: 1; visibility: visible; }
+.to-top-btn:hover { transform: translateY(-3px); background: var(--green-light); }
 
 /* ===== Tea Diagnosis ===== */
 .diag-wrap {
