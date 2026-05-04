@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://aokiyuwadayo.github.io/otyanotsuikien/sitemap.xml

@@ -5,6 +5,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <meta name="description" content="お茶の築城園へのお問い合わせ。本店: 0920-52-0924 ／ 茶小売販売店: 0920-52-0913。日曜定休。">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="お茶の築城園">
+  <meta property="og:url" content="https://aokiyuwadayo.github.io/otyanotsuikien/contact.html">
+  <meta property="og:title" content="お問い合わせ | お茶の築城園">
+  <meta property="og:description" content="お茶の築城園へのお問い合わせ。本店: 0920-52-0924 ／ 茶小売販売店: 0920-52-0913。日曜定休。">
+  <meta property="og:image" content="https://aokiyuwadayo.github.io/otyanotsuikien/images/ogp.jpg">
+  <meta property="og:locale" content="ja_JP">
+  <meta name="twitter:card" content="summary_large_image">
   <title>お問い合わせ | お茶の築城園</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -34,6 +42,7 @@
         <li><a href="about.html"><span class="lang-ja">お店について</span><span class="lang-ko">가게 소개</span></a></li>
         <li><a href="contact.html"><span class="lang-ja">お問い合わせ</span><span class="lang-ko">문의하기</span></a></li>
         <li><a href="access.html"><span class="lang-ja">アクセス</span><span class="lang-ko">오시는 길</span></a></li>
+        <li><a href="faq.html"><span class="lang-ja">よくある質問</span><span class="lang-ko">자주 묻는 질문</span></a></li>
       </ul>
     </nav>
     <button class="lang-toggle-btn" id="langToggle">한국어</button>
@@ -131,6 +140,90 @@
           <span class="lang-ko">소매 판매점에 전화하기</span>
         </a>
       </div>
+
+      <!-- ===== Mail Form ===== -->
+      <div class="reveal" style="margin-top:56px;">
+        <div style="display:flex; align-items:center; gap:16px; margin-bottom:36px;">
+          <div style="flex:1; height:1px; background:var(--border);"></div>
+          <p style="font-size:.76rem; color:var(--text-muted); letter-spacing:.15em; white-space:nowrap; flex-shrink:0;">
+            <span class="lang-ja">またはメールでお問い合わせ</span>
+            <span class="lang-ko">또는 이메일로 문의하기</span>
+          </p>
+          <div style="flex:1; height:1px; background:var(--border);"></div>
+        </div>
+
+        <p class="contact-form-title">
+          <span class="lang-ja">メールフォーム</span>
+          <span class="lang-ko">이메일 문의 양식</span>
+        </p>
+
+        <!--
+          【フォーム送信の設定方法】
+          1. https://formspree.io でアカウント作成（無料プランあり）
+          2. 新しいフォームを作成し、発行されたフォームIDを取得
+          3. 下記 action 属性の "YOUR_FORM_ID" をそのIDに置き換える
+             例: action="https://formspree.io/f/xyzabcde"
+        -->
+        <form id="contactForm" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+
+          <div class="form-group">
+            <label class="form-label" for="form-name">
+              <span class="lang-ja">お名前 <span class="form-required">*</span></span>
+              <span class="lang-ko">이름 <span class="form-required">*</span></span>
+            </label>
+            <input type="text" id="form-name" name="name" class="form-input" required autocomplete="name">
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="form-email">
+              <span class="lang-ja">メールアドレス <span class="form-required">*</span></span>
+              <span class="lang-ko">이메일 주소 <span class="form-required">*</span></span>
+            </label>
+            <input type="email" id="form-email" name="email" class="form-input" required autocomplete="email">
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="form-category">
+              <span class="lang-ja">お問い合わせ種別 <span class="form-required">*</span></span>
+              <span class="lang-ko">문의 유형 <span class="form-required">*</span></span>
+            </label>
+            <select id="form-category" name="category" class="form-select" required>
+              <option value="" disabled selected>── 選択 / 선택 ──</option>
+              <option value="商品の注文・量り売り">商品の注文・量り売り / 상품 주문・무게 판매</option>
+              <option value="ギフト・贈答">ギフト・贈答 / 선물・답례품</option>
+              <option value="商品について">商品について / 상품에 대해</option>
+              <option value="その他">その他 / 기타</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="form-message">
+              <span class="lang-ja">お問い合わせ内容 <span class="form-required">*</span></span>
+              <span class="lang-ko">문의 내용 <span class="form-required">*</span></span>
+            </label>
+            <textarea id="form-message" name="message" class="form-textarea" required></textarea>
+          </div>
+
+          <div class="form-group">
+            <label class="form-checkbox-wrap">
+              <input type="checkbox" name="privacy_agreed" required>
+              <span>
+                <span class="lang-ja"><a href="privacy.html" style="color:var(--green); text-decoration:underline;">プライバシーポリシー</a>に同意する <span class="form-required">*</span></span>
+                <span class="lang-ko"><a href="privacy.html" style="color:var(--green); text-decoration:underline;">개인정보 처리방침</a>에 동의합니다 <span class="form-required">*</span></span>
+              </span>
+            </label>
+          </div>
+
+          <button type="submit" class="form-submit" id="formSubmit">
+            <span class="lang-ja">送信する</span>
+            <span class="lang-ko">전송하기</span>
+          </button>
+
+          <div id="formStatus" class="form-status" role="alert"></div>
+
+        </form>
+      </div>
+
     </div>
 
   </div>
@@ -157,6 +250,7 @@
           <li><a href="about.html"><span class="lang-ja">お店について</span><span class="lang-ko">가게 소개</span></a></li>
           <li><a href="contact.html"><span class="lang-ja">お問い合わせ</span><span class="lang-ko">문의하기</span></a></li>
           <li><a href="access.html"><span class="lang-ja">アクセス</span><span class="lang-ko">오시는 길</span></a></li>
+          <li><a href="faq.html"><span class="lang-ja">よくある質問</span><span class="lang-ko">자주 묻는 질문</span></a></li>
         </ul>
       </nav>
     </div>
@@ -176,7 +270,10 @@
     </div>
   </div>
   <div class="footer-bottom">
-    <p>© 2025 お茶の築城園 All Rights Reserved.</p>
+    <p>
+      © 2025 お茶の築城園 All Rights Reserved.
+      ｜ <a href="privacy.html" style="color:inherit; text-decoration:underline;"><span class="lang-ja">プライバシーポリシー</span><span class="lang-ko">개인정보 처리방침</span></a>
+    </p>
   </div>
 </footer>
 

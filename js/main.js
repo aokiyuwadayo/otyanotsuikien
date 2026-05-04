@@ -95,3 +95,56 @@ document.querySelectorAll('.reveal').forEach(el => {
   el.style.transition = 'opacity .6s ease, transform .6s ease';
   observer.observe(el);
 });
+
+/* ===== Contact Form ===== */
+const contactForm = document.getElementById('contactForm');
+if (contactForm) {
+  contactForm.addEventListener('submit', async (e) => {
+    e.preventDefault();
+    const btn = document.getElementById('formSubmit');
+    const status = document.getElementById('formStatus');
+    const jaSpan = btn.querySelector('.lang-ja');
+    const koSpan = btn.querySelector('.lang-ko');
+
+    btn.disabled = true;
+    if (jaSpan) jaSpan.textContent = '送信中...';
+    if (koSpan) koSpan.textContent = '전송 중...';
+    status.className = 'form-status';
+
+    try {
+      const res = await fetch(contactForm.action, {
+        method: 'POST',
+        body: new FormData(contactForm),
+        headers: { Accept: 'application/json' }
+      });
+      if (res.ok) {
+        contactForm.reset();
+        status.className = 'form-status success';
+        status.innerHTML =
+          '<span class="lang-ja">お問い合わせありがとうございます。内容を確認のうえ、ご返信いたします。</span>' +
+          '<span class="lang-ko">문의해 주셔서 감사합니다. 확인 후 빠른 시일 내에 답변 드리겠습니다.</span>';
+      } else {
+        throw new Error();
+      }
+    } catch {
+      status.className = 'form-status error';
+      status.innerHTML =
+        '<span class="lang-ja">送信に失敗しました。お電話にてお問い合わせください。</span>' +
+        '<span class="lang-ko">전송에 실패했습니다. 전화로 문의해 주세요.</span>';
+    } finally {
+      btn.disabled = false;
+      if (jaSpan) jaSpan.textContent = '送信する';
+      if (koSpan) koSpan.textContent = '전송하기';
+    }
+  });
+}
+
+/* ===== FAQ Accordion ===== */
+document.querySelectorAll('.faq-question').forEach(btn => {
+  btn.addEventListener('click', () => {
+    const answer = btn.nextElementSibling;
+    const isOpen = btn.getAttribute('aria-expanded') === 'true';
+    btn.setAttribute('aria-expanded', String(!isOpen));
+    answer.style.maxHeight = isOpen ? '0' : answer.scrollHeight + 'px';
+  });
+});
