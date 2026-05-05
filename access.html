@@ -71,6 +71,14 @@
     .shop-panel { display: none; }
     .shop-panel.active { display: grid; }
   </style>
+  <!-- Google Analytics: 下記の G-XXXXXXXXXX を取得した Measurement ID に変更してください -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XXXXXXXXXX');
+  </script>
 </head>
 <body>
 
@@ -95,6 +103,7 @@
         <li><a href="about.html"><span class="lang-ja">お店について</span><span class="lang-ko">가게 소개</span></a></li>
         <li><a href="contact.html"><span class="lang-ja">お問い合わせ</span><span class="lang-ko">문의하기</span></a></li>
         <li><a href="access.html"><span class="lang-ja">アクセス</span><span class="lang-ko">오시는 길</span></a></li>
+        <li><a href="faq.html"><span class="lang-ja">よくある質問</span><span class="lang-ko">자주 묻는 질문</span></a></li>
       </ul>
     </nav>
     <button class="lang-toggle-btn" id="langToggle">한국어</button>
@@ -242,6 +251,7 @@
           <li><a href="about.html"><span class="lang-ja">お店について</span><span class="lang-ko">가게 소개</span></a></li>
           <li><a href="contact.html"><span class="lang-ja">お問い合わせ</span><span class="lang-ko">문의하기</span></a></li>
           <li><a href="access.html"><span class="lang-ja">アクセス</span><span class="lang-ko">오시는 길</span></a></li>
+          <li><a href="faq.html"><span class="lang-ja">よくある質問</span><span class="lang-ko">자주 묻는 질문</span></a></li>
         </ul>
       </nav>
     </div>
